@@ -1,0 +1,250 @@
+.tdlp-filter-form {
+  margin-bottom: 20px;
+}
+
+.tdlp-filter-group {
+  display: block;
+  /* margin-right: 15px; */
+  margin-bottom: 10px;
+  /* padding: 0 10px; */
+}
+
+.tdlp-filter-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tdlp-filter-group select {
+  width: 200px;
+  padding: 5px;
+}
+
+.tdlp-filter-form input[type="submit"] {
+  margin-top: 20px;
+}
+
+.tdlp-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tdlp-data-table th,
+.tdlp-data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tdlp-data-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.tdlp-data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tdlp-pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tdlp-pricing-table th,
+.tdlp-pricing-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tdlp-pricing-table th {
+  background-color: #f2f2f2;
+}
+
+.tdlp-purchase-form label,
+.tdlp-purchase-form input,
+.tdlp-purchase-form button {
+  margin: 5px 0;
+}
+
+#buy-now-btn,
+a.buy-now-btn {
+  background-color: #076cec;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+a.buy-now-btn {
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+#buy-now-btn:hover {
+  background-color: #076cec;
+}
+
+.nice-select {
+  border: 1px solid #ddd;
+  padding: 5px 13px;
+}
+
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-selected {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.filter-search {
+  position: sticky; /* This ensures it stays fixed while scrolling */
+  top: 0; /* Fixes it to the top of the dropdown */
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px !important;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  z-index: 10; /* Ensures it stays on top of the dropdown list */
+  margin: 0 auto;
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-list li[data-value=""] {
+  display: none;
+}
+
+.total-contact p {
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: -15px;
+  color: #000;
+}
+
+.download-btn a {
+  text-decoration: none !important;
+  font-size: 19px;
+  color: #000;
+  font-weight: 700;
+}
+
+.download-btn a i {
+  font-size: 21px;
+}
+
+.row.top.align-items-center {
+  padding: 80px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.input-field-container.d-flex.align-items-center {
+  justify-content: space-between;
+}
+
+.tdlp-purchase-form.text-center h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.input-field-container.d-flex.align-items-center p {
+  margin-bottom: 0;
+}
+
+.price-buy-area p {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.tdlp-pricing {
+  padding-top: 50px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tdlp-pricing p {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.tdlp-pricing p.form-field {
+  width: 25%;
+}
+
+.tdlp-pricing p.form-field input {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 27px;
+  padding-right: 0;
+}
+
+/* need media query */
+@media (max-width: 768px) {
+  .row.top.align-items-center {
+    text-align: center;
+  }
+
+  a#buy-now-btn {
+    display: block;
+    margin: 20px 0;
+  }
+  .input-field-container.d-flex.align-items-center {
+    display: block !important;
+  }
+  .tdlp-pricing p.form-field {
+    width: 100%;
+  }
+  .tdlp-pricing p {
+    font-size: 20px;
+  }
+}
